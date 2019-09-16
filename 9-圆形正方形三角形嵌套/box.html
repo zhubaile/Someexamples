@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="box.css">
+</head>
+<body>
+<!--<article class="main">
+    <div class="one">
+        <div class="main-wrap">nihao</div>
+    </div>
+    <div class="two" onclick="two()">
+
+    </div>
+    <div class="three">
+
+    </div>
+</article>-->
+<!--正方形圆形三角形重合-->
+<article>
+    <svg width="400px" height="300" version="1.1"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <circle cx="110" cy="110" r="100" stroke="black"
+                stroke-width="2" fill="red" class="one"/>
+        <rect x="40" y="40" width="140" height="140"
+              style="fill:rgb(0,0,255);stroke-width:1;
+stroke:rgb(0,0,0)" onclick="two()"/>
+        <!--110和40是三角形上面点的X和Y坐标；40和180是左边点的X和Y坐标；180和180是右边点的X和Y坐标-->
+        <polygon points="110,40 40,180 180,180"
+                  class="three"/>
+    </svg>
+</article>
+<!--三栏布局等分-->
+<div class="box">
+    <div class="left"></div>
+    <div class="main"></div>
+    <div class="right"></div>
+</div>
+<script src="box.js"></script>
+</body>
+</html>

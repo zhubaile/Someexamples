@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>你不知道的CSS第三季</title>
+    <style>
+        body{
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.5.1/css-doodle.min.js"></script>
+    <css-doodle>
+            :doodle{
+                @grid:1x10 / 61.8vmin;
+            }
+            @place-cell:center;
+            @size:calc(@index() * 10%);
+            border-width:calc(@index() * 1vmin);
+            border-radius: 50%;
+            border-style:dashed;
+            border-color:hsla(
+                calc(20 * @index()) , 70%, 68%,
+                calc(3 / @index() * .8)
+            );
+            --d:@rand(20s,40s);
+            --rf:@rand(360deg);
+            --rt:calc(var(--rf) + @pick(1turn,-turn));
+            animation:spin var(--d) linear infinite;
+            @keyframes spin
+            {
+                from{
+                    transform:rotate(var(--rf))
+                }
+                to{
+                    transform:rotate(var(--rt))
+                }
+            }
+    </css-doodle>
+</body>
+</html>

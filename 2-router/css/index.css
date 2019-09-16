@@ -1,0 +1,78 @@
+.only{
+    width: 100%;
+    height: 100%;
+    background: aqua;
+}
+/*头部*/
+.header{
+    width: 100%;
+    height: 70px;
+    background: #70db93;
+}
+/*中间*/
+.center{
+    position: fixed;
+    top: 70px;
+    bottom:0;
+    float: left;
+    width: 70px;
+    background: #8e6b23;
+}
+.center ul{
+
+}
+.center ul li{
+    float: left;
+    text-align: center;
+}
+/*尾部*/
+.footer{
+    position: fixed;
+    top:70px;
+    left: 70px;
+    right: 0;
+    bottom:0;
+    background: #8fbc8f;
+}
+
+.hxj-popup, .hxj-popup-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
+.hxj-popup { z-index: 1010; }
+.hxj-popup-overlay { z-index: 1000; background-color: #000; opacity: 0.5; }
+.hxj-popup-container { position: absolute; top: 50%; left: 50%; z-index: 1005; background-color: #FFF; border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 3px #666; -moz-box-shadow: 1px 1px 3px #666; box-shadow: 1px 1px 3px #666; }
+.hxj-popup-title { height: 46px; background: #41A6F6; border-bottom: 1px solid #389EEE; padding: 0 10px 0 15px; border-top-left-radius: 5px; border-top-right-radius: 5px; position: relative; }
+.hxj-popup-title h3, .hxj-popup-title a { height: 46px; line-height: 46px; }
+.hxj-popup-title h3 { width: 100%; font-weight: normal; color: #FFF; font-size: 16px; text-align: center; padding: 0; margin: 0; }
+.hxj-popup-title a { position: absolute; top: 0; right: 10px; padding: 0 6px; font-size: 16px; font-family: 'sans-serif'; color: #FFF; text-align: center; text-decoration: none; }
+.hxj-popup-content { box-sizing: content-box; padding: 0 15px; }
+.hxj-popup-bottom { box-sizing: content-box; height: 50px; text-align: center; }
+.hxj-popup-bottom .hxj-btn { margin-top: 5px; margin-left: 5px; margin-right: 5px; padding-left: 20px; padding-right: 20px; outline: none; }
+/* popup layer */
+.hxj-popup-layer .hxj-popup-container { width: 500px; height: 400px; margin-left: -250px; margin-top: -200px; }
+.hxj-popup-layer .hxj-popup-content { padding-top: 10px; padding-bottom: 10px; font-size: 12px; overflow-x: hidden; overflow-y: auto; }
+.hxj-popup-layer .hxj-popup-content { height: 284px; }
+.hxj-popup-layer.popup-big .hxj-popup-container { width: 720px; height: 530px; margin-left: -360px; margin-top: -265px; }
+.hxj-popup-layer.popup-big .hxj-popup-content { height: 414px; }
+.hxj-popup-layer.popup-mini .hxj-popup-container { width: 360px; height: 170px; margin-left: -180px; margin-top: -85px; }
+.hxj-popup-layer.popup-mini .hxj-popup-content { height: 54px; }
+/* popup alert */
+.hxj-popup-alert .hxj-popup-title { background-color: transparent; border-bottom: none; }
+.hxj-popup-alert .hxj-popup-title h3 { display: none; }
+.hxj-popup-alert .hxj-popup-title a { color: #999; }
+.hxj-popup-alert .hxj-popup-title a:hover { color: #333; }
+.hxj-popup-alert .hxj-popup-container { width: 280px; height: 140px; margin-left: -140px; margin-top: -70px; }
+.hxj-popup-alert .hxj-popup-content { height: 39px; margin-top: 5px; font-size: 16px; text-align: center; }
+.hxj-popup-alert .hxj-popup-content i { font-size: 60px; line-height: 1; color: #F70; }
+.hxj-popup-alert .hxj-popup-content p { padding-top: 10px; font-size: 12px; color: #333; line-height: 22px; }
+.hxj-popup-alert .hxj-popup-bottom { border-top: 1px solid transparent; background: transparent; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.hxj-popup-alert .t-btn { margin-top: 10px; }
+/* popup info */
+.hxj-popup-info .hxj-popup-title { background-color: transparent; border-bottom: none; }
+.hxj-popup-info .hxj-popup-title h3 { display: none; }
+.hxj-popup-info .hxj-popup-title a { color: #999; }
+.hxj-popup-info .hxj-popup-title a:hover { color: #333; }
+.hxj-popup-info .hxj-popup-container { width: 400px; height: 240px; margin-left: -200px; margin-top: -120px; }
+.hxj-popup-info .hxj-popup-content { height: 194px; font-size: 16px; text-align: center; overflow-x: hidden; overflow-y: auto; }
+.hxj-popup-info .hxj-popup-content i { font-size: 60px; line-height: 1; color: #F70; }
+.hxj-popup-info .hxj-popup-content p { padding-top: 10px; font-size: 12px; color: #333; line-height: 22px; }
+.hxj-popup-info .hxj-popup-bottom { display: none; }

@@ -1,0 +1,12 @@
+﻿react-router-dom  路由
+webpack    打包
+
+npx webpack  打包
+npm run webpack 
+实时监测
+npm start
+
+webpack  执行命令
+router是路由的配置界面
+xianshi是界面布局，index是接收界面布局的总体。
+popup、zhubaile、zhuyanyan是三个可以跳转的界面
